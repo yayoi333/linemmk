@@ -4,3 +4,12 @@
 # Operating-system files
 .DS_Store
 Thumbs.db
+
+# Vite / Node.js
+node_modules/
+dist/
+dist-cf/
+
+# Local browser verification artifacts
+output/
+debug.log

@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-xs: 400px;
+  --animate-spin-slow: spin 3s linear infinite;
+}
+
+@utility scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
