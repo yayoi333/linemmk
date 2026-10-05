@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
     "build": "vite build",
+    "build:cloudflare": "vite build --configLoader native --base=/ --outDir=dist-cf",
     "preview": "vite preview",
     "lint": "tsc --noEmit"
   },

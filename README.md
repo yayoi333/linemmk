@@ -4,7 +4,7 @@ LINE風トークとスタンプを動かし、販促用の動画として書き�
 
 ## 使う
 
-公開版: https://yayoi333.github.io/linemmk/
+公開版: https://mitemitekun.pages.dev/
 
 1. 右側の「スタンプをアップロード」から、PNGまたは申請用ZIPを追加します。
 2. 左側のスマホ下部パネルでスタンプ・絵文字を選び、会話を組み立てます。
@@ -54,7 +54,9 @@ npm run dev
 
 型検査は `npm run lint`、本番ビルドは `npm run build` です。
 
-`main` ブランチへのプッシュで GitHub Pages に自動デプロイされます。公開先は https://yayoi333.github.io/linemmk/ です。
+本番は Cloudflare Pages の既存プロジェクト `mitemitekun`（https://mitemitekun.pages.dev/）です。`npm run build:cloudflare` でルートパス用の `dist-cf` を生成し、その内容をCloudflare管理画面からプロダクションへアップロードします。GitHub Pagesの自動公開は停止し、旧版の手動公開だけを残しています。
+
+2026-10-05: CLIのOAuth認証は別アカウントでPages権限も不足していたため、既存アカウントにログイン済みのChrome管理画面から公開しました。次回もアカウントと公開先を確認し、認証エラー時に別アカウントへ新規作成しないでください。
 
 ## 主要ライブラリ
 
